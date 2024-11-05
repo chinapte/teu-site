@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEU轴承工业有限公司</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans">
+    <!-- 导航栏 -->
+    <nav class="bg-white/80 backdrop-blur-md shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+					 <!-- 将文字替换为图片 -->
+					<a href="index.html" class="flex items-center">
+						<img src="images/logo.png" alt="TEU Logo" class="h-10 w-auto"> <!-- 使用本地图标路径 -->
+					</a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-blue-600 transition duration-300">首页</a>
+                    <a href="about.html" class="text-gray-600 hover:text-blue-600 transition duration-300">关于我们</a>
+                    <a href="products.html" class="text-gray-600 hover:text-blue-600 transition duration-300">产品系列</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-blue-600 transition duration-300">联系我们</a>
+                </div>
+                <!-- 移动端菜单按钮 -->
+                <div class="md:hidden flex items-center">
+                    <button class="mobile-menu-button">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- 移动端菜单 -->
+        <div class="mobile-menu hidden md:hidden">
+            <a href="index.html" class="block py-2 px-4 text-sm hover:bg-gray-100">首页</a>
+            <a href="about.html" class="block py-2 px-4 text-sm hover:bg-gray-100">关于我们</a>
+            <a href="products.html" class="block py-2 px-4 text-sm hover:bg-gray-100">产品系列</a>
+            <a href="contact.html" class="block py-2 px-4 text-sm hover:bg-gray-100">联系我们</a>
+        </div>
+    </nav>
+
+    <!-- 首页内容 -->
+    <div id="default-carousel" class="relative w-full h-screen" data-carousel="slide">
+        <!-- 轮播图项目 -->
+        <div class="relative h-full overflow-hidden">
+            <!-- 第一张轮播图 -->
+            <div class="hidden duration-700 ease-in-out h-full" data-carousel-item>
+                <div class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+                    <div class="w-full h-full bg-[url('https://cdn.pixabay.com/photo/2020/07/08/04/12/work-5382501_1280.jpg')] bg-cover bg-center">
+                        <div class="w-full h-full bg-black/50 flex items-center justify-center">
+                            <div class="text-center text-white">
+                                <h1 class="text-5xl font-bold mb-4 animate-fade-in">全球领先的轴承解决方案</h1>
+                                <p class="text-xl mb-8 animate-fade-in-delay">专注于工业轴承和纺织塑编轴承领域的创新与发展</p>
+                                <a href="contact.html" class="inline-block bg-blue-600 text-white px-8 py-3 rounded-full hover:bg-blue-700 transition duration-300">
+                                    联系我们
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 第二张轮播图 -->
+            <div class="hidden duration-700 ease-in-out h-full" data-carousel-item>
+                <div class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+                    <div class="w-full h-full bg-[url('https://cdn.pixabay.com/photo/2020/01/29/20/24/building-4803602_960_720.jpg')] bg-cover bg-center">
+                        <div class="w-full h-full bg-black/50 flex items-center justify-center">
+                            <div class="text-center text-white">
+                                <h2 class="text-5xl font-bold mb-4">四大生产基地</h2>
+                                <p class="text-xl">台湾·德国·美国·中国</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 第三张轮播图 -->
+            <div class="hidden duration-700 ease-in-out h-full" data-carousel-item>
+                <div class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+                    <div class="w-full h-full bg-[url('https://cdn.pixabay.com/photo/2015/05/15/01/48/computer-767776_1280.jpg')] bg-cover bg-center">
+                        <div class="w-full h-full bg-black/50 flex items-center justify-center">
+                            <div class="text-center text-white">
+                                <h2 class="text-5xl font-bold mb-4">年产3000万套</h2>
+                                <p class="text-xl">优质轴承产品</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 轮播图控制按钮 -->
+        <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+                <svg class="w-4 h-4 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                </svg>
+            </span>
+        </button>
+        <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+                <svg class="w-4 h-4 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                </svg>
+            </span>
+        </button>
+    </div>
+
+    <!-- 首页特色内容 -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-lg p-8 transform hover:-translate-y-2 transition duration-300">
+                    <h3 class="text-xl font-bold mb-4">研发创新</h3>
+                    <p class="text-gray-600">每年销售额7%用于研发，持续创新优化产品性能。</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-8 transform hover:-translate-y-2 transition duration-300">
+                    <h3 class="text-xl font-bold mb-4">全球布局</h3>
+                    <p class="text-gray-600">四大生产基地，覆盖全球50多个国家。</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-8 transform hover:-translate-y-2 transition duration-300">
+                    <h3 class="text-xl font-bold mb-4">品质保证</h3>
+                    <p class="text-gray-600">现代化测试设备，严格质量控制体系。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">联系我们</h4>
+                    <p>中国大陆服务：4000 618 628</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">地址</h4>
+                    <p>台中市西屯區台灣大道四段2008號</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">快速链接</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="hover:text-blue-400">关于我们</a></li>
+                        <li><a href="products.html" class="hover:text-blue-400">产品系列</a></li>
+                        <li><a href="contact.html" class="hover:text-blue-400">联系方式</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">在线咨询</h4>
+                    <div class="flex space-x-4">
+                        <li><a href="contact.html" class="hover:text-blue-400">留言</a></li>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p>© 2024 TEU轴承工业有限公司. 版权所有</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // 移动端菜单切换
+        document.querySelector('.mobile-menu-button').addEventListener('click', function() {
+            document.querySelector('.mobile-menu').classList.toggle('hidden');
+        });
+
+        // 页面滚动效果
+        document.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 0) {
+                nav.classList.add('shadow-lg');
+            } else {
+                nav.classList.remove('shadow-lg');
+            }
+        });
+    </script>
+</body>
+</html>
