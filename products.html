@@ -294,26 +294,54 @@ SKF 产品组合提供了各种各样的单元，具有不同的轴承座形状�
             </div>
         </div>
     </footer>
-	<!-- 底部导航，仅移动端显示 -->
-	<footer class="fixed bottom-0 left-0 w-full bg-red-600 text-white shadow-md md:hidden">
-		<div class="flex justify-between items-center">
-			<a href="index.html" class="flex-1 text-center py-2 hover:bg-red-700">
-				<span class="text-sm">首页</span>
+<footer class="fixed bottom-0 left-0 w-full bg-red-600 text-white shadow-md md:hidden">
+		<div class="flex justify-between items-center text-sm">
+			<a href="index.html" 
+			   class="flex-1 text-center py-3 hover:bg-red-700 active:bg-red-800">
+				<span>首页</span>
 			</a>
-			<a href="products.html" class="flex-1 text-center py-2 hover:bg-red-700">
-				<span class="text-sm">关于TEU</span>
+			<a href="about.html" 
+			   class="flex-1 text-center py-3 hover:bg-red-700 active:bg-red-800">
+				<span>关于TEU</span>
 			</a>
-			<a href="products.html" class="flex-1 text-center py-2 hover:bg-red-700">
-				<span class="text-sm">产品</span>
+			<a href="products.html" 
+			   class="flex-1 text-center py-3 hover:bg-red-700 active:bg-red-800 current-page">
+				<span>产品</span>
 			</a>
-			<a href="solution.html" class="flex-1 text-center py-2 hover:bg-red-700">
-				<span class="text-sm">方案</span>
+			<a href="solution.html" 
+			   class="flex-1 text-center py-3 hover:bg-red-700 active:bg-red-800">
+				<span>方案</span>
 			</a>
-			<a href="contact.html" class="flex-1 text-center py-2 hover:bg-red-700">
-				<span class="text-sm">联系</span>
+			<a href="contact.html" 
+			   class="flex-1 text-center py-3 hover:bg-red-700 active:bg-red-800">
+				<span>联系</span>
 			</a>
 		</div>
 	</footer>
+
+	<style>
+		/* 当前页面按钮的样式 */
+		.current-page {
+			background-color: #b91c1c; /* 深红色 */
+			font-weight: bold;
+		}
+
+		/* 调整按钮边框分隔 */
+		footer a {
+			border-right: 1px solid rgba(255, 255, 255, 0.3);
+		}
+
+		/* 移除最后一个按钮的边框 */
+		footer a:last-child {
+			border-right: none;
+		}
+
+		/* 更清晰的触控区域 */
+		footer a span {
+			display: block;
+			padding: 5px 0;
+		}
+	</style>
     <script>
         // 移动端菜单切换
         document.querySelector('.mobile-menu-button').addEventListener('click', function() {
